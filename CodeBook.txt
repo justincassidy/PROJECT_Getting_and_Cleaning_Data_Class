@@ -1,0 +1,132 @@
+Column Names - 
+*** Variables below are the MEAN of all measurements of that type for each activity
+
+"1" "activity"
+"2" "BodyAcceleration-mean()-X"
+"3" "BodyAcceleration-mean()-Y"
+"4" "BodyAcceleration-mean()-Z"
+"5" "GravityAcceleration-mean()-X"
+"6" "GravityAcceleration-mean()-Y"
+"7" "GravityAcceleration-mean()-Z"
+"8" "BodyAccelerationJerk-mean()-X"
+"9" "BodyAccelerationJerk-mean()-Y"
+"10" "BodyAccelerationJerk-mean()-Z"
+"11" "BodyGyro-mean()-X"
+"12" "BodyGyro-mean()-Y"
+"13" "BodyGyro-mean()-Z"
+"14" "BodyGyroJerk-mean()-X"
+"15" "BodyGyroJerk-mean()-Y"
+"16" "BodyGyroJerk-mean()-Z"
+"17" "BodyAccelerationMagnitude-mean()"
+"18" "GravityAccelerationMagnitude-mean()"
+"19" "BodyAccelerationJerkMagnitude-mean()"
+"20" "BodyGyroMagnitude-mean()"
+"21" "BodyGyroJerkMagnitude-mean()"
+"22" "BodyAcceleration-mean()-X"
+"23" "BodyAcceleration-mean()-Y"
+"24" "BodyAcceleration-mean()-Z"
+"25" "BodyAcceleration-meanFrequency()-X"
+"26" "BodyAcceleration-meanFrequency()-Y"
+"27" "BodyAcceleration-meanFrequency()-Z"
+"28" "BodyAccelerationJerk-mean()-X"
+"29" "BodyAccelerationJerk-mean()-Y"
+"30" "BodyAccelerationJerk-mean()-Z"
+"31" "BodyAccelerationJerk-meanFrequency()-X"
+"32" "BodyAccelerationJerk-meanFrequency()-Y"
+"33" "BodyAccelerationJerk-meanFrequency()-Z"
+"34" "BodyGyro-mean()-X"
+"35" "BodyGyro-mean()-Y"
+"36" "BodyGyro-mean()-Z"
+"37" "BodyGyro-meanFrequency()-X"
+"38" "BodyGyro-meanFrequency()-Y"
+"39" "BodyGyro-meanFrequency()-Z"
+"40" "BodyAccelerationMagnitude-mean()"
+"41" "BodyAccelerationMagnitude-meanFrequency()"
+"42" "BodyBodyAccelerationJerkMagnitude-mean()"
+"43" "BodyBodyAccelerationJerkMagnitude-meanFrequency()"
+"44" "BodyBodyGyroMagnitude-mean()"
+"45" "BodyBodyGyroMagnitude-meanFrequency()"
+"46" "BodyBodyGyroJerkMagnitude-mean()"
+"47" "BodyBodyGyroJerkMagnitude-meanFrequency()"
+"48" "BodyAcceleration-StandardDeviation()-X"
+"49" "BodyAcceleration-StandardDeviation()-Y"
+"50" "BodyAcceleration-StandardDeviation()-Z"
+"51" "GravityAcceleration-StandardDeviation()-X"
+"52" "GravityAcceleration-StandardDeviation()-Y"
+"53" "GravityAcceleration-StandardDeviation()-Z"
+"54" "BodyAccelerationJerk-StandardDeviation()-X"
+"55" "BodyAccelerationJerk-StandardDeviation()-Y"
+"56" "BodyAccelerationJerk-StandardDeviation()-Z"
+"57" "BodyGyro-StandardDeviation()-X"
+"58" "BodyGyro-StandardDeviation()-Y"
+"59" "BodyGyro-StandardDeviation()-Z"
+"60" "BodyGyroJerk-StandardDeviation()-X"
+"61" "BodyGyroJerk-StandardDeviation()-Y"
+"62" "BodyGyroJerk-StandardDeviation()-Z"
+"63" "BodyAccelerationMagnitude-StandardDeviation()"
+"64" "GravityAccelerationMagnitude-StandardDeviation()"
+"65" "BodyAccelerationJerkMagnitude-StandardDeviation()"
+"66" "BodyGyroMagnitude-StandardDeviation()"
+"67" "BodyGyroJerkMagnitude-StandardDeviation()"
+"68" "BodyAcceleration-StandardDeviation()-X"
+"69" "BodyAcceleration-StandardDeviation()-Y"
+"70" "BodyAcceleration-StandardDeviation()-Z"
+"71" "BodyAccelerationJerk-StandardDeviation()-X"
+"72" "BodyAccelerationJerk-StandardDeviation()-Y"
+"73" "BodyAccelerationJerk-StandardDeviation()-Z"
+"74" "BodyGyro-StandardDeviation()-X"
+"75" "BodyGyro-StandardDeviation()-Y"
+"76" "BodyGyro-StandardDeviation()-Z"
+"77" "BodyAccelerationMagnitude-StandardDeviation()"
+"78" "BodyBodyAccelerationJerkMagnitude-StandardDeviation()"
+"79" "BodyBodyGyroMagnitude-StandardDeviation()"
+"80" "BodyBodyGyroJerkMagnitude-StandardDeviation()"
+
+
+*** Data modified as described in readme.md
+ 
+*** Data was originally from description below, however
+*** ONLY MEANS AND STANDARD DEVIATIONS (std) FIELDS ARE INCLUDED 
+
+==================================================================
+Human Activity Recognition Using Smartphones Dataset
+Version 1.0
+==================================================================
+Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
+Smartlab - Non Linear Complex Systems Laboratory
+DITEN - Università degli Studi di Genova.
+Via Opera Pia 11A, I-16145, Genoa, Italy.
+activityrecognition@smartlab.ws
+www.smartlab.ws
+==================================================================
+
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
+
+For each record it is provided:
+======================================
+
+- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+- Triaxial Angular velocity from the gyroscope. 
+- A 561-feature vector with time and frequency domain variables. 
+- Its activity label. 
+- An identifier of the subject who carried out the experiment.
+
+
+Notes: 
+======
+- Features are normalized and bounded within [-1,1].
+- Each feature vector is a row on the text file.
+
+For more information about this dataset contact: activityrecognition@smartlab.ws
+
+License:
+========
+Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
+
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
+
+Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
